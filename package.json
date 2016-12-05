@@ -1,0 +1,39 @@
+{
+  "name": "dstruct",
+  "version": "0.0.0",
+  "description": "JavaScript data structure extension library",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha tests/index.test.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsck/dstruct.git"
+  },
+  "keywords": [
+    "data",
+    "structures",
+    "set",
+    "stack",
+    "queue",
+    "linked",
+    "list",
+    "dictionary",
+    "hash",
+    "table",
+    "tree",
+    "avl",
+    "graph"
+  ],
+  "author": "Terrence Keane <terrencekeane@gmail.com> (http://www.tkeane.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsck/dstruct/issues"
+  },
+  "homepage": "https://github.com/tsck/dstruct#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "3.2.0",
+    "nyc": "10.0.0"
+  }
+}
