@@ -4,6 +4,7 @@
   "description": "JavaScript data structure extension library",
   "main": "dist/index.js",
   "scripts": {
+    "commit": "git-cz",
     "test": "mocha tests/index.test.js -w"
   },
   "repository": {
@@ -33,7 +34,12 @@
   "homepage": "https://github.com/tsck/dstruct#readme",
   "devDependencies": {
     "chai": "3.5.0",
+    "commitizen": "^2.8.6",
+    "cz-conventional-changelog": "^1.2.0",
     "mocha": "3.2.0",
     "nyc": "10.0.0"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
