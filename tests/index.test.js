@@ -1,6 +1,9 @@
-let
-  index = require('../src/index'),
-  expect = require('chai').expect;
+// let
+//   index = require('../src/index'),
+//   expect = require('chai').expect;
+
+import {index} from '../src/index';
+import {expect} from 'chai';
 
 describe('index', () => {
   it('Should return 0', () => {

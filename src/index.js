@@ -1,5 +1,3 @@
-function index() {
+export function index() {
   return 0;
-}
-
-module.exports = index;
+};
