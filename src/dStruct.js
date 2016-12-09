@@ -1,7 +1,9 @@
 import { Stack } from './structures/Stack';
+import { Queue } from './structures/Queue';
 
 var dStruct = {
-  Stack: Stack
+  Stack: Stack,
+  Queue: Queue
 };
 
 export { dStruct };

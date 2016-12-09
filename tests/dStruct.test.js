@@ -8,4 +8,11 @@ describe('The dStruct object', function() {
       expect(stack instanceof dStruct.Stack).to.be.true;
     });
   });
+
+  describe('Public Queue class', function() {
+    it('Should create a new Queue', function() {
+      let queue = new dStruct.Queue();
+      expect(queue instanceof dStruct.Queue).to.be.true;
+    });
+  });
 });
