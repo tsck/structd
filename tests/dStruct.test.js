@@ -15,4 +15,11 @@ describe('The dStruct object', function() {
       expect(queue instanceof dStruct.Queue).to.be.true;
     });
   });
+
+  describe('Public LinkedList class', function() {
+    it('Should create a new LinkedList', function() {
+      let ll = new dStruct.LinkedList();
+      expect(ll instanceof dStruct.LinkedList).to.be.true;
+    });
+  });
 });
