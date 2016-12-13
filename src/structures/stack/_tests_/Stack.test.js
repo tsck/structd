@@ -1,4 +1,4 @@
-import {Stack} from '../../src/structures/Stack.js';
+import {Stack} from '../Stack.js';
 import {expect} from 'chai';
 
 describe('Stack Class', function() {

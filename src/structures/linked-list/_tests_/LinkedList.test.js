@@ -1,4 +1,4 @@
-import {LinkedList} from '../../src/structures/LinkedList.js';
+import {LinkedList} from '../LinkedList.js';
 import {expect} from 'chai';
 
 describe('The LinkedList Class', function() {

@@ -1,4 +1,4 @@
-import { simpleHashCode } from '../../src/helpers/HashCodes.js';
+import { simpleHashCode } from '../HashCodes.js';
 import { expect } from 'Chai';
 
 describe('hashCode() helper function', function() {

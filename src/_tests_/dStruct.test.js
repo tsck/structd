@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import {dStruct} from '../src/dStruct';
+import {dStruct} from '../dStruct';
 
 describe('The dStruct object', function() {
   describe('Public Stack class', function() {

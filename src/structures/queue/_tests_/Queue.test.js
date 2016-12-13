@@ -1,4 +1,4 @@
-import {Queue} from '../../src/structures/Queue.js';
+import {Queue} from '../Queue.js';
 import {expect} from 'chai';
 
 describe('Queue Class', function() {

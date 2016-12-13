@@ -1,6 +1,6 @@
-import { simpleHashCode } from '../helpers/HashCodes.js';
-import { ValuePair } from '../helpers/ValuePair.js';
-import { LinkedList } from './LinkedList.js';
+import { simpleHashCode } from './HashCodes.js';
+import { ValuePair } from './ValuePair.js';
+import { LinkedList } from '../linked-list/LinkedList.js';
 
 export class HashTable {
   constructor() {

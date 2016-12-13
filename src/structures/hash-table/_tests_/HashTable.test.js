@@ -1,4 +1,4 @@
-import { HashTable } from '../../src/structures/HashTable.js';
+import { HashTable } from '../HashTable.js';
 import { expect } from 'Chai';
 
 describe('HashTable class', function() {

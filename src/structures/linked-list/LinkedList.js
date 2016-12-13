@@ -1,4 +1,4 @@
-import { LinkedListNode } from '../helpers/LinkedListNode.js';
+import { LinkedListNode } from './LinkedListNode.js';
 
 export class LinkedList {
   constructor() {
