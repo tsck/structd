@@ -1,4 +1,4 @@
-import { LLNode } from '../helpers/LLNode.js';
+import { LinkedListNode } from '../helpers/LinkedListNode.js';
 
 export class LinkedList {
   constructor() {
@@ -8,7 +8,7 @@ export class LinkedList {
 
   append(element) {
     let
-      node = new LLNode(element),
+      node = new LinkedListNode(element),
       current;
 
     // Check if this is 1st item in list
@@ -30,7 +30,7 @@ export class LinkedList {
 
   insert(position, element) {
     let
-      node = new LLNode(element),
+      node = new LinkedListNode(element),
       prevPosition = position - 1,
       prevNode = this.head,
       nextNode;
