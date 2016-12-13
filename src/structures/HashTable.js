@@ -1,4 +1,4 @@
-import { hashCode } from '../helpers/hashCode.js';
+import { simpleHashCode } from '../helpers/HashCodes.js';
 import { ValuePair } from '../helpers/ValuePair.js';
 import { LinkedList } from './LinkedList.js';
 
@@ -8,7 +8,7 @@ export class HashTable {
   }
 
   get(key) {
-    let position = hashCode(key);
+    let position = simpleHashCode(key);
 
     if (this.table[position] !== undefined) {
       let current = this.table[position].head;
@@ -31,7 +31,7 @@ export class HashTable {
   }
 
   put(key, value) {
-    let position = hashCode(key);
+    let position = simpleHashCode(key);
 
     if (this.table[position] === undefined) {
       this.table[position] = new LinkedList();
@@ -41,7 +41,7 @@ export class HashTable {
   }
 
   remove(key) {
-    let position = hashCode(key);
+    let position = simpleHashCode(key);
 
     if (this.table[position] !== undefined) {
       let current = this.table[position].head;
