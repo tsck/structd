@@ -18,8 +18,15 @@ describe('The dStruct object', function() {
 
   describe('Public LinkedList class', function() {
     it('Should create a new LinkedList', function() {
-      let ll = new dstruct.LinkedList();
-      expect(ll instanceof dstruct.LinkedList).to.be.true;
+        let ll = new dstruct.LinkedList();
+        expect(ll instanceof dstruct.LinkedList).to.be.true;
+    });
+  });
+
+  describe('Public HashTable class', function() {
+    it('Should create a new HashTable', function() {
+        let hashTable = new dstruct.HashTable();
+        expect(hashTable instanceof dstruct.HashTable).to.be.true;
     });
   });
 });
