@@ -29,4 +29,11 @@ describe('The dStruct object', function() {
         expect(hashTable instanceof dstruct.HashTable).to.be.true;
     });
   });
+
+  describe('Public BinarySearchTree class', function() {
+    it('Should create a new BinarySearchTree', function() {
+        let bst = new dstruct.BinarySearchTree();
+        expect(bst instanceof dstruct.BinarySearchTree).to.be.true;
+    });
+  });
 });

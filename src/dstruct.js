@@ -2,12 +2,14 @@ import { Stack } from './structures/stack/Stack';
 import { Queue } from './structures/queue/Queue';
 import { LinkedList } from './structures/linked-list/LinkedList';
 import { HashTable } from './structures/hash-table/HashTable';
+import { BinarySearchTree } from './structures/binary-search-tree/BinarySearchTree';
 
 var dstruct = {
-  Stack         : Stack,
-    Queue       : Queue,
-    LinkedList  : LinkedList,
-    HashTable   : HashTable
+  Stack               : Stack,
+    Queue             : Queue,
+    LinkedList        : LinkedList,
+    HashTable         : HashTable,
+    BinarySearchTree  : BinarySearchTree
 };
 
 export { dstruct };
