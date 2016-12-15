@@ -2,7 +2,7 @@
   "name": "dstruct",
   "version": "0.0.0",
   "description": "JavaScript data structure extension library",
-  "main": "dist/index.js",
+  "main": "dist/dstruct.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "babel --copy-files --out-dir dist src/index.js",
