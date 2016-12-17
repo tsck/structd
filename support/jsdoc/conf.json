@@ -8,6 +8,7 @@
   },
   "plugins": ["plugins/markdown"],
   "opts": {
+    "template": "./node_modules/minami",
     "readme": "README.md",
     "encoding": "utf8",
     "destination": "./docs",
