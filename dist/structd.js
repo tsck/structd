@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["dstruct"] = factory();
+		exports["structd"] = factory();
 	else
-		root["dstruct"] = factory();
+		root["structd"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -59,7 +59,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.structsjs = undefined;
+	exports.structd = undefined;
 	
 	var _Stack = __webpack_require__(1);
 	
@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _Graph = __webpack_require__(10);
 	
-	var structsjs = {
+	var structd = {
 	  Stack: _Stack.Stack,
 	  Queue: _Queue.Queue,
 	  LinkedList: _LinkedList.LinkedList,
@@ -82,7 +82,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Graph: _Graph.Graph
 	};
 	
-	exports.structsjs = structsjs;
+	exports.structd = structd;
 
 /***/ },
 /* 1 */
