@@ -11,12 +11,12 @@ $ npm install dstruct
 ## Features
 
 Class support for the following data structures
-    * Stacks
-    * Queues
-    * Hash Tables
-    * Linked Lists
-    * Binary Search Tress
-    * Graphs
+* Stacks
+* Queues
+* Hash Tables
+* Linked Lists
+* Binary Search Tress
+* Graphs
     
 ## License
 
