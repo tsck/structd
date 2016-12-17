@@ -96,12 +96,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var map = new WeakMap();
 	
+	/** Class representing a last-in-first-out (LIFO) stack of elements. */
+	
 	var Stack = exports.Stack = function () {
+	  /**
+	   * Creates a stack.
+	   */
 	  function Stack() {
 	    _classCallCheck(this, Stack);
 	
 	    map.set(this, []);
 	  }
+	
+	  /**
+	   * Get a string representation of the stack.
+	   * @returns {string} The string representation of stack.
+	   */
+	
 	
 	  _createClass(Stack, [{
 	    key: "toString",
@@ -109,30 +120,59 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var stack = map.get(this);
 	      return stack.toString();
 	    }
+	
+	    /**
+	     * Gets and removes the last element in stack.
+	     * @returns {*} The last element in stack.
+	     */
+	
 	  }, {
 	    key: "pop",
 	    value: function pop() {
 	      var stack = map.get(this);
 	      return stack.pop();
 	    }
+	
+	    /**
+	     * Pushes an element onto stack.
+	     * @param {*} element - Element to be added to stack.
+	     */
+	
 	  }, {
 	    key: "push",
 	    value: function push(element) {
 	      var stack = map.get(this);
 	      stack.push(element);
 	    }
+	
+	    /**
+	     * Gets the size of stack.
+	     * @returns {number} The size of stack.
+	     */
+	
 	  }, {
 	    key: "size",
 	    value: function size() {
 	      var stack = map.get(this);
 	      return stack.length;
 	    }
+	
+	    /**
+	     * Checks whether or not the stack is empty.
+	     * @returns {boolean} True if the stack's empty, false if it's not.
+	     */
+	
 	  }, {
 	    key: "isEmpty",
 	    value: function isEmpty() {
 	      var stack = map.get(this);
 	      return stack.length === 0;
 	    }
+	
+	    /**
+	     * Removes all elements from stack.
+	     */
+	
 	  }, {
 	    key: "clear",
 	    value: function clear() {
@@ -160,12 +200,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var map = new WeakMap();
 	
+	/** Class representing a first-in-first-out (FIFO) queue of elements. */
+	
 	var Queue = exports.Queue = function () {
+	  /**
+	   * Creates a queue.
+	   */
 	  function Queue() {
 	    _classCallCheck(this, Queue);
 	
 	    map.set(this, []);
 	  }
+	
+	  /**
+	   * Get a string representation of queue.
+	   * @returns {string} The string representation of queue.
+	   */
+	
 	
 	  _createClass(Queue, [{
 	    key: "toString",
@@ -173,36 +224,71 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var queue = map.get(this);
 	      return queue.toString();
 	    }
+	
+	    /**
+	     * Removes the first element from the queue.
+	     * @returns {*} Element removed from queue.
+	     */
+	
 	  }, {
 	    key: "dequeue",
 	    value: function dequeue() {
 	      var queue = map.get(this);
 	      return queue.shift();
 	    }
+	
+	    /**
+	     * Places an element onto queue.
+	     * @param {*} element - Element to be added to queue.
+	     */
+	
 	  }, {
 	    key: "enqueue",
 	    value: function enqueue(element) {
 	      var queue = map.get(this);
 	      queue.push(element);
 	    }
+	
+	    /**
+	     * Gets the size of queue.
+	     * @returns {number} The size of queue.
+	     */
+	
 	  }, {
 	    key: "size",
 	    value: function size() {
 	      var queue = map.get(this);
 	      return queue.length;
 	    }
+	
+	    /**
+	     * Checks whether queue is empty.
+	     * @returns {boolean} True if empty, false if not.
+	     */
+	
 	  }, {
 	    key: "isEmpty",
 	    value: function isEmpty() {
 	      var queue = map.get(this);
 	      return queue.length === 0;
 	    }
+	
+	    /**
+	     * Gets first element of queue without removing it.
+	     * @returns {*} First element of queue.
+	     */
+	
 	  }, {
 	    key: "front",
 	    value: function front() {
 	      var queue = map.get(this);
 	      return queue[0];
 	    }
+	
+	    /**
+	     * Removes all elements from queue.
+	     */
+	
 	  }, {
 	    key: "clear",
 	    value: function clear() {
@@ -231,13 +317,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
+	/** Class representing a singly linked list of elements. */
 	var LinkedList = exports.LinkedList = function () {
+	  /**
+	   * Creates a linked list.
+	   */
 	  function LinkedList() {
 	    _classCallCheck(this, LinkedList);
 	
 	    this.length = 0;
 	    this.head = null;
 	  }
+	
+	  /**
+	   * Appends an element to the end of list.
+	   * @param {*} element - Element to be appended to list.
+	   */
+	
 	
 	  _createClass(LinkedList, [{
 	    key: 'append',
@@ -261,6 +357,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	      this.length++;
 	    }
+	
+	    /**
+	     * Inserts an element into the list at a given position.
+	     * @param {number} position - Position to insert new element.
+	     * @param {*} element - Element to be inserted into list.
+	     */
+	
 	  }, {
 	    key: 'insert',
 	    value: function insert(position, element) {
@@ -278,6 +381,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      prevNode.next = node;
 	      node.next = nextNode;
 	    }
+	
+	    /**
+	     * Removes element from list at given position
+	     * @param {number} position - Position where element to be removed is.
+	     */
+	
 	  }, {
 	    key: 'removeAt',
 	    value: function removeAt(position) {
@@ -299,12 +408,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	      }
 	    }
+	
+	    /**
+	     * Removes given element from list.
+	     * @param {*} element - Element to be removed.
+	     */
+	
 	  }, {
 	    key: 'remove',
 	    value: function remove(element) {
 	      var position = this.indexOf(element);
 	      this.removeAt(position);
 	    }
+	
+	    /**
+	     * Get the index of a given element.
+	     * @param {*} element - Element who's index is needed.
+	     * @returns {number} Index of given element.
+	     */
+	
 	  }, {
 	    key: 'indexOf',
 	    value: function indexOf(element) {
@@ -323,16 +445,34 @@ return /******/ (function(modules) { // webpackBootstrap
 	      // Will only be reached if element not found in list
 	      return -1;
 	    }
+	
+	    /**
+	     * Checks whether or not the list is empty.
+	     * @returns {boolean} True if the list's empty, false if it's not.
+	     */
+	
 	  }, {
 	    key: 'isEmpty',
 	    value: function isEmpty() {
 	      return this.length === 0;
 	    }
+	
+	    /**
+	     * Gets the size of list.
+	     * @returns {number} The size of list.
+	     */
+	
 	  }, {
 	    key: 'size',
 	    value: function size() {
 	      return this.length;
 	    }
+	
+	    /**
+	     * Get a string representation of the list.
+	     * @returns {string} The string representation of list.
+	     */
+	
 	  }, {
 	    key: 'toString',
 	    value: function toString() {
@@ -394,12 +534,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
+	/** Class representing a hash table which maps keys to values. */
 	var HashTable = exports.HashTable = function () {
+	  /**
+	   * Creates a hash table.
+	   */
 	  function HashTable() {
 	    _classCallCheck(this, HashTable);
 	
 	    this.table = [];
 	  }
+	
+	  /**
+	   * Gets value at given key.
+	   * @param {*} key - Key of the element to get.
+	   * @returns {*|undefined} Returns element at given key, or undefined if no item is found.
+	   */
+	
 	
 	  _createClass(HashTable, [{
 	    key: 'get',
@@ -425,6 +576,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	      return undefined;
 	    }
+	
+	    /**
+	     * Put value in table at given key.
+	     * @param {*} key - Key where to put given value.
+	     * @param {*} value - Value to put at given key.
+	     */
+	
 	  }, {
 	    key: 'put',
 	    value: function put(key, value) {
@@ -436,6 +594,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	      this.table[position].append(new _ValuePair.ValuePair(key, value));
 	    }
+	
+	    /**
+	     * Remove the value at the given key.
+	     * @param {*} key - Key of value to remove.
+	     * @returns {boolean} True if remove is successful, false if it is not.
+	     */
+	
 	  }, {
 	    key: 'remove',
 	    value: function remove(key) {
@@ -662,12 +827,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	}
 	
+	/** Class representing a binary search tree */
+	
 	var BinarySearchTree = exports.BinarySearchTree = function () {
+	    /**
+	     * Creates a binary search tree.
+	     */
 	    function BinarySearchTree() {
 	        _classCallCheck(this, BinarySearchTree);
 	
 	        this.root = null;
 	    }
+	
+	    /**
+	     * Inserts key into tree.
+	     * @param {*} key
+	     */
+	
 	
 	    _createClass(BinarySearchTree, [{
 	        key: 'insert',
@@ -679,36 +855,80 @@ return /******/ (function(modules) { // webpackBootstrap
 	                insertNewNode.call(this, this.root, node);
 	            }
 	        }
+	
+	        /**
+	         * Searches for given key.
+	         * @param {*} key - Key to find.
+	         * @returns {boolean} True if key is found, false if not.
+	         */
+	
 	    }, {
 	        key: 'search',
 	        value: function search(key) {
 	            return searchNode.call(this, this.root, key);
 	        }
+	
+	        /**
+	         * Traverse through tree in order, executing callback each time with key as argument.
+	         * @param {function} callback - Callback to be executed.
+	         */
+	
 	    }, {
 	        key: 'inOrderTraverse',
 	        value: function inOrderTraverse(callback) {
 	            inOrderTraverseNode.call(this, this.root, callback);
 	        }
+	
+	        /**
+	         * Traverse through tree in pre-order, executing callback each time with key as argument.
+	         * @param {function} callback - Callback to be executed.
+	         */
+	
 	    }, {
 	        key: 'preOrderTraverse',
 	        value: function preOrderTraverse(callback) {
 	            preOrderTraverseNode.call(this, this.root, callback);
 	        }
+	
+	        /**
+	         * Traverse through tree in post-order, executing callback each time with key as argument.
+	         * @param {function} callback - Callback to be executed.
+	         */
+	
 	    }, {
 	        key: 'postOrderTraverse',
 	        value: function postOrderTraverse(callback) {
 	            postOrderTraverseNode.call(this, this.root, callback);
 	        }
+	
+	        /**
+	         * Returns minimum key in tree.
+	         * @returns {*} Minimum key.
+	         */
+	
 	    }, {
 	        key: 'min',
 	        value: function min() {
 	            return minNode.call(this, this.root);
 	        }
+	
+	        /**
+	         * Returns maximum key in tree.
+	         * @returns {*} Maximum key.
+	         */
+	
 	    }, {
 	        key: 'max',
 	        value: function max() {
 	            return maxNode.call(this, this.root);
 	        }
+	
+	        /**
+	         * Removes given key from tree.
+	         * @param {*} key - Key to be removed.
+	         * @returns {*|null} Key that was removed or null if it was not found.
+	         */
+	
 	    }, {
 	        key: 'remove',
 	        value: function remove(key) {
@@ -759,7 +979,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _verticesMap = new Map();
 	var _connectionsMap = new Map();
 	
+	/** Class representing an undirected graph. */
+	
 	var Graph = exports.Graph = function () {
+	    /**
+	    * Creates a graph.
+	    */
 	    function Graph() {
 	        _classCallCheck(this, Graph);
 	
@@ -767,12 +992,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _connectionsMap.set(this, new Map());
 	    }
 	
+	    /**
+	     * Add given vertex to graph.
+	     * @param {*} v - Vertex to add to graph.
+	     */
+	
+	
 	    _createClass(Graph, [{
 	        key: 'add',
 	        value: function add(v) {
 	            _verticesMap.get(this).push(v);
 	            _connectionsMap.get(this).set(v, []);
 	        }
+	
+	        /**
+	         * Remove given vertex from graph.
+	         * @param {*} vertex - Vertex to be removed from graph.
+	         */
+	
 	    }, {
 	        key: 'remove',
 	        value: function remove(vertex) {
@@ -784,12 +1021,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	                this.disconnect(vertex, connections[i]);
 	            }
 	        }
+	
+	        /**
+	         * Connects two vertices with an edge.
+	         * @param {*} vertex1 - First vertex to be connected to second vertex.
+	         * @param {*} vertex2 - Second vertex to be connected to first vertex.
+	         */
+	
 	    }, {
 	        key: 'connect',
 	        value: function connect(vertex1, vertex2) {
 	            _connectionsMap.get(this).get(vertex1).push(vertex2);
 	            _connectionsMap.get(this).get(vertex2).push(vertex1);
 	        }
+	
+	        /**
+	         * Disconnect two vertices.
+	         * @param {*} vertex1 - First vertex to be disconnected from second vertex.
+	         * @param {*} vertex2 - Second vertex to be disconnected from first vertex.
+	         */
+	
 	    }, {
 	        key: 'disconnect',
 	        value: function disconnect(vertex1, vertex2) {
@@ -799,11 +1050,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var arr2 = _connectionsMap.get(this).get(vertex2);
 	            arr2.splice(arr2.indexOf(vertex1), 1);
 	        }
+	
+	        /**
+	         * Checks if graph is empty.
+	         * @returns {boolean} True if it's empty, false if it's not.
+	         */
+	
 	    }, {
 	        key: 'isEmpty',
 	        value: function isEmpty() {
 	            return _verticesMap.get(this).length === 0;
 	        }
+	
+	        /**
+	         * Gets string representation of graph.
+	         * @returns {string} String representing graph.
+	         */
+	
 	    }, {
 	        key: 'toString',
 	        value: function toString() {
@@ -820,17 +1083,35 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	            return output;
 	        }
+	
+	        /**
+	         * Removes all vertices from graph.
+	         */
+	
 	    }, {
 	        key: 'clear',
 	        value: function clear() {
 	            _verticesMap.set(this, []);
 	            _connectionsMap.set(this, new Map());
 	        }
+	
+	        /**
+	         * Returns the number of vertices in graph.
+	         * @returns {number} Number of vertices in graph.
+	         */
+	
 	    }, {
 	        key: 'size',
 	        value: function size() {
 	            return _verticesMap.get(this).length;
 	        }
+	
+	        /**
+	         * Checks whether given vertex is in graph.
+	         * @param {*} vertex - Vertex to check.
+	         * @returns {boolean} True if it is, false if it's not.
+	         */
+	
 	    }, {
 	        key: 'contains',
 	        value: function contains(vertex) {
@@ -840,16 +1121,35 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	            return index >= 0 ? true : false;
 	        }
+	
+	        /**
+	         * Gets array of all connections to given vertex.
+	         * @param {*} vertex - Vertex to get connections of.
+	         * @returns {array} Of connected vertices to given vertex.
+	         */
+	
 	    }, {
 	        key: 'getVerticesConnectedTo',
 	        value: function getVerticesConnectedTo(vertex) {
 	            return _connectionsMap.get(this).get(vertex);
 	        }
+	
+	        /**
+	         * Gets an array of all vertices in graph.
+	         * @returns {array} Array of all vertices in graph.
+	         */
+	
 	    }, {
 	        key: 'getAllVertices',
 	        value: function getAllVertices() {
 	            return _verticesMap.get(this);
 	        }
+	
+	        /**
+	         * Performs callback on every vertices in graph, passing vertices' value in as an argument.
+	         * @param {function} callback - Callback to be executed on each vertex.
+	         */
+	
 	    }, {
 	        key: 'forEach',
 	        value: function forEach(callback) {
@@ -889,6 +1189,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	                }
 	            }
 	        }
+	
+	        /**
+	         * Returns an object containing keys for all vertices and values representing the distances they are from the given vertex.
+	         * @param {*} vertex - Vertex to get distances from.
+	         * @returns {object} Object containing distances.
+	         */
+	
 	    }, {
 	        key: 'getDistancesFrom',
 	        value: function getDistancesFrom(vertex) {

@@ -70,7 +70,7 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run cover && npm run check-coverage && npm run lint && npm run document && npm run build"
+      "pre-commit": "npm run cover && npm run check-coverage && npm run lint"
     }
   },
   "babel": {
