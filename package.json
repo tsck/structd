@@ -1,17 +1,17 @@
 {
-  "name": "dstruct",
+  "name": "structd",
   "description": "JavaScript data structure extension library",
   "version": "1.0.0-beta.0",
-  "main": "dist/dstruct.js",
+  "main": "dist/structd.js",
   "author": "Terrence Keane",
   "license": "MIT",
-  "homepage": "https://github.com/tsck/dstruct#readme",
+  "homepage": "https://github.com/tsck/structd#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tsck/dstruct.git"
+    "url": "git+https://github.com/tsck/structd.git"
   },
   "bugs": {
-    "url": "https://github.com/tsck/dstruct/issues"
+    "url": "https://github.com/tsck/structd/issues"
   },
   "keywords": [
     "data structures",
@@ -45,8 +45,8 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "npm-run-all build:*",
-    "build:umd": "webpack --output-filename dstruct.js",
-    "build:umd.min": "webpack --output-filename dstruct.min.js -p",
+    "build:umd": "webpack --output-filename structd.js",
+    "build:umd.min": "webpack --output-filename structd.min.js -p",
     "commit": "git-cz",
     "check-coverage": "nyc check-coverage --statements 70 --branches 70 --functions 70 --lines 70 tap ./src",
     "lint": "eslint --ignore-pattern *.test.js src",

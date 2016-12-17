@@ -1,46 +1,46 @@
 import {expect} from 'chai';
-import {dstruct} from '../dstruct';
+import {structd} from '../index';
 
-describe('The dStruct object', function() {
+describe('The structd object', function() {
   describe('Public Stack class', function() {
     it('Should create a new Stack', function() {
-      let stack = new dstruct.Stack();
-      expect(stack instanceof dstruct.Stack).to.be.true;
+      let stack = new structd.Stack();
+      expect(stack instanceof structd.Stack).to.be.true;
     });
   });
 
   describe('Public Queue class', function() {
     it('Should create a new Queue', function() {
-      let queue = new dstruct.Queue();
-      expect(queue instanceof dstruct.Queue).to.be.true;
+      let queue = new structd.Queue();
+      expect(queue instanceof structd.Queue).to.be.true;
     });
   });
 
   describe('Public LinkedList class', function() {
     it('Should create a new LinkedList', function() {
-        let ll = new dstruct.LinkedList();
-        expect(ll instanceof dstruct.LinkedList).to.be.true;
+        let ll = new structd.LinkedList();
+        expect(ll instanceof structd.LinkedList).to.be.true;
     });
   });
 
   describe('Public HashTable class', function() {
     it('Should create a new HashTable', function() {
-        let hashTable = new dstruct.HashTable();
-        expect(hashTable instanceof dstruct.HashTable).to.be.true;
+        let hashTable = new structd.HashTable();
+        expect(hashTable instanceof structd.HashTable).to.be.true;
     });
   });
 
   describe('Public BinarySearchTree class', function() {
     it('Should create a new BinarySearchTree', function() {
-        let bst = new dstruct.BinarySearchTree();
-        expect(bst instanceof dstruct.BinarySearchTree).to.be.true;
+        let bst = new structd.BinarySearchTree();
+        expect(bst instanceof structd.BinarySearchTree).to.be.true;
     });
   });
 
   describe('Public Graph class', function() {
     it('Should create a new Graph', function() {
-        let graph = new dstruct.Graph();
-        expect(graph instanceof dstruct.Graph).to.be.true;
+        let graph = new structd.Graph();
+        expect(graph instanceof structd.Graph).to.be.true;
     });
   });
 });

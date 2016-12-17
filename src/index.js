@@ -5,7 +5,7 @@ import { HashTable } from './structures/hash-table/HashTable';
 import { BinarySearchTree } from './structures/binary-search-tree/BinarySearchTree';
 import { Graph } from './structures/graph/Graph';
 
-var dstruct = {
+var structd = {
   Stack             : Stack,
   Queue             : Queue,
   LinkedList        : LinkedList,
@@ -14,4 +14,4 @@ var dstruct = {
   Graph             : Graph
 };
 
-export { dstruct };
+export { structd };

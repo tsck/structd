@@ -59,7 +59,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.dstruct = undefined;
+	exports.structsjs = undefined;
 	
 	var _Stack = __webpack_require__(1);
 	
@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _Graph = __webpack_require__(10);
 	
-	var dstruct = {
+	var structsjs = {
 	  Stack: _Stack.Stack,
 	  Queue: _Queue.Queue,
 	  LinkedList: _LinkedList.LinkedList,
@@ -82,7 +82,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Graph: _Graph.Graph
 	};
 	
-	exports.dstruct = dstruct;
+	exports.structsjs = structsjs;
 
 /***/ },
 /* 1 */
@@ -938,4 +938,4 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ ])
 });
 ;
-//# sourceMappingURL=dstruct.js.map
+//# sourceMappingURL=structd.js.map

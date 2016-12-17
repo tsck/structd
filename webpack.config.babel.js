@@ -3,11 +3,11 @@ import { join } from 'path';
 const include = join(__dirname, 'src');
 
 export default {
-  entry: './src/dstruct',
+  entry: './src/index',
   output: {
     path: join(__dirname, 'dist'),
     libraryTarget: 'umd',
-    library: 'dstruct'
+    library: 'structd'
   },
   devtool: 'source-map',
   module: {
