@@ -59,7 +59,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.structd = undefined;
+	exports.Graph = exports.BinarySearchTree = exports.HashTable = exports.LinkedList = exports.Queue = exports.Stack = undefined;
 	
 	var _Stack = __webpack_require__(1);
 	
@@ -73,16 +73,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _Graph = __webpack_require__(10);
 	
-	var structd = {
-	  Stack: _Stack.Stack,
-	  Queue: _Queue.Queue,
-	  LinkedList: _LinkedList.LinkedList,
-	  HashTable: _HashTable.HashTable,
-	  BinarySearchTree: _BinarySearchTree.BinarySearchTree,
-	  Graph: _Graph.Graph
-	};
+	exports.Stack = _Stack.Stack;
+	exports.Queue = _Queue.Queue;
+	exports.LinkedList = _LinkedList.LinkedList;
+	exports.HashTable = _HashTable.HashTable;
+	exports.BinarySearchTree = _BinarySearchTree.BinarySearchTree;
+	exports.Graph = _Graph.Graph;
 	
-	exports.structd = structd;
+	// var structd = {
+	//   Stack             : Stack,
+	//   Queue             : Queue,
+	//   LinkedList        : LinkedList,
+	//   HashTable         : HashTable,
+	//   BinarySearchTree  : BinarySearchTree,
+	//   Graph             : Graph
+	// };
+	//
+	// export default { structd };
 
 /***/ },
 /* 1 */

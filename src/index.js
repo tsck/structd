@@ -5,13 +5,15 @@ import { HashTable } from './structures/hash-table/HashTable';
 import { BinarySearchTree } from './structures/binary-search-tree/BinarySearchTree';
 import { Graph } from './structures/graph/Graph';
 
-var structd = {
-  Stack             : Stack,
-  Queue             : Queue,
-  LinkedList        : LinkedList,
-  HashTable         : HashTable,
-  BinarySearchTree  : BinarySearchTree,
-  Graph             : Graph
-};
+export { Stack, Queue, LinkedList, HashTable, BinarySearchTree, Graph };
 
-export { structd };
+// var structd = {
+//   Stack             : Stack,
+//   Queue             : Queue,
+//   LinkedList        : LinkedList,
+//   HashTable         : HashTable,
+//   BinarySearchTree  : BinarySearchTree,
+//   Graph             : Graph
+// };
+//
+// export default { structd };
