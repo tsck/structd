@@ -1,6 +1,8 @@
 # Structd
 
-Structd is a JavaScript data structure extension library that provides additional data structure class support. It can be used in Node.js as well as in the browser.
+Structd is a JavaScript data structure extension library that provides additional data structure class support. 
+
+It can be used in Node.js as well as in the browser.
 
 ## Installation
 
