@@ -9,7 +9,3 @@
 Structd is a JavaScript data structure extension library that provides additional data structure class support. It is designed to be used in bothin [Node.js](https://nodejs.org/en/) and is installable via `npm install struct`, it can also be used directly in the browser.
 
 For Documentation, visit http://tsck.github.io/structd/
-
-## License
-
-[MIT](LICENSE)
