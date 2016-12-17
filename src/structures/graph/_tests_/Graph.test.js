@@ -1,4 +1,4 @@
-import { expect } from 'Chai';
+import { expect } from 'chai';
 import { Graph } from '../Graph';
 
 describe('Graph Class', () => {

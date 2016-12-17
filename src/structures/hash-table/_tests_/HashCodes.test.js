@@ -1,5 +1,5 @@
 import { simpleHashCode } from '../HashCodes.js';
-import { expect } from 'Chai';
+import { expect } from 'chai';
 
 describe('hashCode() helper function', function() {
   it('should generate number based on the sum each char ASCII value', function() {

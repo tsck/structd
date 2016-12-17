@@ -1,4 +1,4 @@
-import { expect } from 'Chai';
+import { expect } from 'chai';
 import { BinarySearchTree } from '../BinarySearchTree.js';
 
 describe('BinarySearchTree class', () => {

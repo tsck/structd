@@ -1,5 +1,5 @@
 import { HashTable } from '../HashTable.js';
-import { expect } from 'Chai';
+import { expect } from 'chai';
 
 describe('HashTable class', function() {
   describe('put(key, value) and get(key)', function() {
