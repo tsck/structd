@@ -53,7 +53,7 @@
     "build:umd.min": "webpack --output-filename structd.min.js -p",
     "commit": "git-cz",
     "check-coverage": "nyc check-coverage --statements 70 --branches 70 --functions 70 --lines 70 tap ./src",
-    "document": "jsdoc -c ./support/jsdoc/conf.json",
+    "document": "jsdoc -c ./jsdoc.json",
     "lint": "eslint --ignore-pattern *.test.js src",
     "watch:test": "npm t -- -w",
     "test": "mocha --recursive ./src --compilers js:babel-register",
