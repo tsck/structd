@@ -9,7 +9,7 @@
   "plugins": ["plugins/markdown"],
   "opts": {
     "template": "./node_modules/minami",
-    "readme": "README.md",
+    "readme": "intro.md",
     "encoding": "utf8",
     "destination": "./docs",
     "recurse": true
