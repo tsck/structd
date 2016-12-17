@@ -7,4 +7,4 @@ export class ValuePair {
   toString() {
     return `[${this.key} - ${this.value}]`;
   }
-};
+}

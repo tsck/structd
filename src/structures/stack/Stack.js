@@ -34,4 +34,4 @@ export class Stack {
     let stack = map.get(this);
     stack.splice(0, stack.length);
   }
-};
+}

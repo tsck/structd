@@ -113,4 +113,4 @@ export class LinkedList {
     return string;
   }
 
-};
+}

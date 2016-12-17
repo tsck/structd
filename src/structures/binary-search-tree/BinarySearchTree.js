@@ -111,7 +111,7 @@ function insertNewNode(node, newNode) {
         if (node.left === null) {
             node.left = newNode;
         } else {
-            insertNode(node.left, newNode);
+          insertNewNode(node.left, newNode);
         }
     } else {
         if (node.right === null) {

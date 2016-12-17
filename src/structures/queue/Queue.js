@@ -39,4 +39,4 @@ export class Queue {
     let queue = map.get(this);
     queue.splice(0, queue.length);
   }
-};
+}

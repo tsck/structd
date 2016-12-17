@@ -3,4 +3,4 @@ export class LinkedListNode {
     this.element = element;
     this.next = null;
   }
-};
+}

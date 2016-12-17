@@ -70,4 +70,4 @@ export class HashTable {
     }
     return false;
   }
-};
+}

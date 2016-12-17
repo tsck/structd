@@ -4,4 +4,4 @@ export function simpleHashCode(key) {
     hash += key.charCodeAt(i);
   }
   return hash % 37;
-};
+}
