@@ -5,7 +5,7 @@
   "main": "dist/dstruct.js",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "npm-run-all --parallel build:*",
+    "build": "npm-run-all build:*",
     "build:umd": "webpack --output-filename dstruct.js",
     "build:umd.min": "webpack --output-filename dstruct.min.js -p",
     "commit": "git-cz",

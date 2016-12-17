@@ -144,11 +144,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      stack.splice(0, stack.length);
 	    }
 	  }]);
-	
+
 	  return Stack;
 	}();
-	
-	;
 
 /***/ },
 /* 2 */
@@ -216,11 +214,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      queue.splice(0, queue.length);
 	    }
 	  }]);
-	
+
 	  return Queue;
 	}();
-	
-	;
 
 /***/ },
 /* 3 */
@@ -358,11 +354,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return string;
 	    }
 	  }]);
-	
+
 	  return LinkedList;
 	}();
-	
-	;
 
 /***/ },
 /* 4 */
@@ -382,8 +376,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	  this.element = element;
 	  this.next = null;
 	};
-	
-	;
 
 /***/ },
 /* 5 */
@@ -481,11 +473,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return false;
 	    }
 	  }]);
-	
+
 	  return HashTable;
 	}();
-	
-	;
 
 /***/ },
 /* 6 */
@@ -503,7 +493,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    hash += key.charCodeAt(i);
 	  }
 	  return hash % 37;
-	};
+	}
 
 /***/ },
 /* 7 */
@@ -533,11 +523,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return "[" + this.key + " - " + this.value + "]";
 	    }
 	  }]);
-	
+
 	  return ValuePair;
 	}();
-	
-	;
 
 /***/ },
 /* 8 */
@@ -667,7 +655,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        if (node.left === null) {
 	            node.left = newNode;
 	        } else {
-	            insertNode(node.left, newNode);
+	            insertNewNode(node.left, newNode);
 	        }
 	    } else {
 	        if (node.right === null) {
@@ -942,11 +930,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	            return distances;
 	        }
 	    }]);
-	
+
 	    return Graph;
 	}();
-	
-	;
 
 /***/ }
 /******/ ])
