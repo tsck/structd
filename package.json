@@ -1,49 +1,27 @@
 {
   "name": "dstruct",
-  "version": "0.0.0",
   "description": "JavaScript data structure extension library",
+  "version": "1.0.0-beta.0",
   "main": "dist/dstruct.js",
-  "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "npm-run-all build:*",
-    "build:umd": "webpack --output-filename dstruct.js",
-    "build:umd.min": "webpack --output-filename dstruct.min.js -p",
-    "commit": "git-cz",
-    "check-coverage": "nyc check-coverage --statements 70 --branches 70 --functions 70 --lines 70 tap ./src",
-    "lint": "eslint --ignore-pattern *.test.js src",
-    "watch:test": "npm t -- -w",
-    "test": "mocha --recursive ./src --compilers js:babel-register",
-    "cover": "nyc npm t"
-  },
+  "author": "Terrence Keane",
+  "license": "MIT",
+  "homepage": "https://github.com/tsck/dstruct#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tsck/dstruct.git"
   },
-  "keywords": [
-    "data",
-    "structures",
-    "set",
-    "stack",
-    "queue",
-    "linked",
-    "list",
-    "dictionary",
-    "hash",
-    "table",
-    "tree",
-    "avl",
-    "graph"
-  ],
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "author": "Terrence Keane <terrencekeane@gmail.com> (http://www.tkeane.me/)",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tsck/dstruct/issues"
   },
-  "homepage": "https://github.com/tsck/dstruct#readme",
+  "keywords": [
+    "data structures",
+    "stack",
+    "queue",
+    "linked list",
+    "dictionary",
+    "tree",
+    "graph"
+  ],
   "devDependencies": {
     "babel-cli": "6.18.0",
     "babel-core": "6.21.0",
@@ -64,6 +42,22 @@
     "rimraf": "^2.5.4",
     "webpack": "1.14.0"
   },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "npm-run-all build:*",
+    "build:umd": "webpack --output-filename dstruct.js",
+    "build:umd.min": "webpack --output-filename dstruct.min.js -p",
+    "commit": "git-cz",
+    "check-coverage": "nyc check-coverage --statements 70 --branches 70 --functions 70 --lines 70 tap ./src",
+    "lint": "eslint --ignore-pattern *.test.js src",
+    "watch:test": "npm t -- -w",
+    "test": "mocha --recursive ./src --compilers js:babel-register",
+    "cover": "nyc npm t"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
   },
