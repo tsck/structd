@@ -122,46 +122,84 @@ function insertNewNode(node, newNode) {
     }
 }
 
+/** Class representing a binary search tree */
 export class BinarySearchTree {
-    constructor() {
-        this.root = null;
-    }
+  /**
+   * Creates a binary search tree.
+   */
+  constructor() {
+    this.root = null;
+  }
 
-    insert(key) {
-        let node = new BSTNode(key);
-        if (this.root === null) {
-            this.root = node;
-        } else {
-            insertNewNode.call(this, this.root, node);
-        }
-    }
+  /**
+   * Inserts key into tree.
+   * @param {*} key
+   */
+  insert(key) {
+      let node = new BSTNode(key);
+      if (this.root === null) {
+          this.root = node;
+      } else {
+          insertNewNode.call(this, this.root, node);
+      }
+  }
 
-    search(key) {
-        return searchNode.call(this, this.root, key);
-    }
+  /**
+   * Searches for given key.
+   * @param {*} key - Key to find.
+   * @returns {boolean} True if key is found, false if not.
+   */
+  search(key) {
+      return searchNode.call(this, this.root, key);
+  }
 
-    inOrderTraverse(callback) {
-        inOrderTraverseNode.call(this, this.root, callback);
-    }
+  /**
+   * Traverse through tree in order, executing callback each time with key as argument.
+   * @param {function} callback - Callback to be executed.
+   */
+  inOrderTraverse(callback) {
+      inOrderTraverseNode.call(this, this.root, callback);
+  }
 
-    preOrderTraverse(callback) {
-        preOrderTraverseNode.call(this, this.root, callback);
-    }
+  /**
+   * Traverse through tree in pre-order, executing callback each time with key as argument.
+   * @param {function} callback - Callback to be executed.
+   */
+  preOrderTraverse(callback) {
+      preOrderTraverseNode.call(this, this.root, callback);
+  }
 
-    postOrderTraverse(callback) {
-        postOrderTraverseNode.call(this, this.root, callback);
-    }
+  /**
+   * Traverse through tree in post-order, executing callback each time with key as argument.
+   * @param {function} callback - Callback to be executed.
+   */
+  postOrderTraverse(callback) {
+      postOrderTraverseNode.call(this, this.root, callback);
+  }
 
-    min() {
-        return minNode.call(this, this.root);
-    }
+  /**
+   * Returns minimum key in tree.
+   * @returns {*} Minimum key.
+   */
+  min() {
+      return minNode.call(this, this.root);
+  }
 
-    max() {
-        return maxNode.call(this, this.root);
-    }
+  /**
+   * Returns maximum key in tree.
+   * @returns {*} Maximum key.
+   */
+  max() {
+      return maxNode.call(this, this.root);
+  }
 
-    remove(key) {
-        return removeNode.call(this, this.root, key);
-    }
+  /**
+   * Removes given key from tree.
+   * @param {*} key - Key to be removed.
+   * @returns {*|null} Key that was removed or null if it was not found.
+   */
+  remove(key) {
+      return removeNode.call(this, this.root, key);
+  }
 }
 

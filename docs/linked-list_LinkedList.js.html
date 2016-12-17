@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>linked-list/LinkedList.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BinarySearchTree.html">BinarySearchTree</a><ul class='methods'><li data-type='method'><a href="BinarySearchTree.html#inOrderTraverse">inOrderTraverse</a></li><li data-type='method'><a href="BinarySearchTree.html#inOrderTraverse">inOrderTraverse</a></li><li data-type='method'><a href="BinarySearchTree.html#insert">insert</a></li><li data-type='method'><a href="BinarySearchTree.html#insert">insert</a></li><li data-type='method'><a href="BinarySearchTree.html#max">max</a></li><li data-type='method'><a href="BinarySearchTree.html#max">max</a></li><li data-type='method'><a href="BinarySearchTree.html#min">min</a></li><li data-type='method'><a href="BinarySearchTree.html#min">min</a></li><li data-type='method'><a href="BinarySearchTree.html#postOrderTraverse">postOrderTraverse</a></li><li data-type='method'><a href="BinarySearchTree.html#postOrderTraverse">postOrderTraverse</a></li><li data-type='method'><a href="BinarySearchTree.html#preOrderTraverse">preOrderTraverse</a></li><li data-type='method'><a href="BinarySearchTree.html#preOrderTraverse">preOrderTraverse</a></li><li data-type='method'><a href="BinarySearchTree.html#remove">remove</a></li><li data-type='method'><a href="BinarySearchTree.html#remove">remove</a></li><li data-type='method'><a href="BinarySearchTree.html#search">search</a></li><li data-type='method'><a href="BinarySearchTree.html#search">search</a></li></ul></li><li><a href="Graph.html">Graph</a><ul class='methods'><li data-type='method'><a href="Graph.html#add">add</a></li><li data-type='method'><a href="Graph.html#add">add</a></li><li data-type='method'><a href="Graph.html#clear">clear</a></li><li data-type='method'><a href="Graph.html#clear">clear</a></li><li data-type='method'><a href="Graph.html#connect">connect</a></li><li data-type='method'><a href="Graph.html#connect">connect</a></li><li data-type='method'><a href="Graph.html#contains">contains</a></li><li data-type='method'><a href="Graph.html#contains">contains</a></li><li data-type='method'><a href="Graph.html#disconnect">disconnect</a></li><li data-type='method'><a href="Graph.html#disconnect">disconnect</a></li><li data-type='method'><a href="Graph.html#forEach">forEach</a></li><li data-type='method'><a href="Graph.html#forEach">forEach</a></li><li data-type='method'><a href="Graph.html#getAllVertices">getAllVertices</a></li><li data-type='method'><a href="Graph.html#getAllVertices">getAllVertices</a></li><li data-type='method'><a href="Graph.html#getDistancesFrom">getDistancesFrom</a></li><li data-type='method'><a href="Graph.html#getDistancesFrom">getDistancesFrom</a></li><li data-type='method'><a href="Graph.html#getVerticesConnectedTo">getVerticesConnectedTo</a></li><li data-type='method'><a href="Graph.html#getVerticesConnectedTo">getVerticesConnectedTo</a></li><li data-type='method'><a href="Graph.html#isEmpty">isEmpty</a></li><li data-type='method'><a href="Graph.html#isEmpty">isEmpty</a></li><li data-type='method'><a href="Graph.html#remove">remove</a></li><li data-type='method'><a href="Graph.html#remove">remove</a></li><li data-type='method'><a href="Graph.html#size">size</a></li><li data-type='method'><a href="Graph.html#size">size</a></li><li data-type='method'><a href="Graph.html#toString">toString</a></li><li data-type='method'><a href="Graph.html#toString">toString</a></li></ul></li><li><a href="HashTable.html">HashTable</a><ul class='methods'><li data-type='method'><a href="HashTable.html#get">get</a></li><li data-type='method'><a href="HashTable.html#get">get</a></li><li data-type='method'><a href="HashTable.html#put">put</a></li><li data-type='method'><a href="HashTable.html#put">put</a></li><li data-type='method'><a href="HashTable.html#remove">remove</a></li><li data-type='method'><a href="HashTable.html#remove">remove</a></li></ul></li><li><a href="LinkedList.html">LinkedList</a><ul class='methods'><li data-type='method'><a href="LinkedList.html#append">append</a></li><li data-type='method'><a href="LinkedList.html#append">append</a></li><li data-type='method'><a href="LinkedList.html#indexOf">indexOf</a></li><li data-type='method'><a href="LinkedList.html#indexOf">indexOf</a></li><li data-type='method'><a href="LinkedList.html#insert">insert</a></li><li data-type='method'><a href="LinkedList.html#insert">insert</a></li><li data-type='method'><a href="LinkedList.html#isEmpty">isEmpty</a></li><li data-type='method'><a href="LinkedList.html#isEmpty">isEmpty</a></li><li data-type='method'><a href="LinkedList.html#remove">remove</a></li><li data-type='method'><a href="LinkedList.html#remove">remove</a></li><li data-type='method'><a href="LinkedList.html#removeAt">removeAt</a></li><li data-type='method'><a href="LinkedList.html#removeAt">removeAt</a></li><li data-type='method'><a href="LinkedList.html#size">size</a></li><li data-type='method'><a href="LinkedList.html#size">size</a></li><li data-type='method'><a href="LinkedList.html#toString">toString</a></li><li data-type='method'><a href="LinkedList.html#toString">toString</a></li></ul></li><li><a href="Queue.html">Queue</a><ul class='methods'><li data-type='method'><a href="Queue.html#clear">clear</a></li><li data-type='method'><a href="Queue.html#clear">clear</a></li><li data-type='method'><a href="Queue.html#dequeue">dequeue</a></li><li data-type='method'><a href="Queue.html#dequeue">dequeue</a></li><li data-type='method'><a href="Queue.html#enqueue">enqueue</a></li><li data-type='method'><a href="Queue.html#enqueue">enqueue</a></li><li data-type='method'><a href="Queue.html#front">front</a></li><li data-type='method'><a href="Queue.html#front">front</a></li><li data-type='method'><a href="Queue.html#isEmpty">isEmpty</a></li><li data-type='method'><a href="Queue.html#isEmpty">isEmpty</a></li><li data-type='method'><a href="Queue.html#size">size</a></li><li data-type='method'><a href="Queue.html#size">size</a></li><li data-type='method'><a href="Queue.html#toString">toString</a></li><li data-type='method'><a href="Queue.html#toString">toString</a></li></ul></li><li><a href="Stack.html">Stack</a><ul class='methods'><li data-type='method'><a href="Stack.html#clear">clear</a></li><li data-type='method'><a href="Stack.html#clear">clear</a></li><li data-type='method'><a href="Stack.html#isEmpty">isEmpty</a></li><li data-type='method'><a href="Stack.html#isEmpty">isEmpty</a></li><li data-type='method'><a href="Stack.html#pop">pop</a></li><li data-type='method'><a href="Stack.html#pop">pop</a></li><li data-type='method'><a href="Stack.html#push">push</a></li><li data-type='method'><a href="Stack.html#push">push</a></li><li data-type='method'><a href="Stack.html#size">size</a></li><li data-type='method'><a href="Stack.html#size">size</a></li><li data-type='method'><a href="Stack.html#toString">toString</a></li><li data-type='method'><a href="Stack.html#toString">toString</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">linked-list/LinkedList.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { LinkedListNode } from './LinkedListNode.js';
+
+/** Class representing a singly linked list of elements. */
+export class LinkedList {
+  /**
+   * Creates a linked list.
+   */
+  constructor() {
+    this.length = 0;
+    this.head = null;
+  }
+
+  /**
+   * Appends an element to the end of list.
+   * @param {*} element - Element to be appended to list.
+   */
+  append(element) {
+    let
+      node = new LinkedListNode(element),
+      current;
+
+    // Check if this is 1st item in list
+    if (this.head === null) {
+      this.head = node;
+    } else {
+      current = this.head;
+
+      // Loop to last node in list
+      while (current.next) {
+        current = current.next;
+      }
+
+      current.next = node;
+    }
+
+    this.length++;
+  }
+
+  /**
+   * Inserts an element into the list at a given position.
+   * @param {number} position - Position to insert new element.
+   * @param {*} element - Element to be inserted into list.
+   */
+  insert(position, element) {
+    let
+      node = new LinkedListNode(element),
+      prevPosition = position - 1,
+      prevNode = this.head,
+      nextNode;
+
+      // Get previous element
+      for (let i = 0; i &lt; prevPosition; i++) {
+        prevNode = prevNode.next;
+      }
+
+      nextNode = prevNode.next;
+      prevNode.next = node;
+      node.next = nextNode;
+  }
+
+  /**
+   * Removes element from list at given position
+   * @param {number} position - Position where element to be removed is.
+   */
+  removeAt(position) {
+    if (position > -1 &amp;&amp; position &lt; this.length &amp;&amp; this.head != null) {
+      let
+        prevPosition = position - 1,
+        current = this.head;
+
+      if (position === 0) {
+        this.head = current.next;
+      } else {
+        // Get previous element
+        for (let i = 0; i &lt; prevPosition; i++) {
+          current = current.next;
+        }
+
+        // Assign previous elements next to the element after the element being
+        // replaced
+        current.next = current.next.next;
+      }
+    }
+  }
+
+  /**
+   * Removes given element from list.
+   * @param {*} element - Element to be removed.
+   */
+  remove(element) {
+    let position = this.indexOf(element);
+    this.removeAt(position);
+  }
+
+  /**
+   * Get the index of a given element.
+   * @param {*} element - Element who's index is needed.
+   * @returns {number} Index of given element.
+   */
+  indexOf(element) {
+    let
+      index = 0,
+      current;
+
+    if (this.head) {
+      current = this.head;
+      while (current) {
+        if (current.element === element) return index;
+        index++;
+        current = current.next;
+      }
+    }
+
+    // Will only be reached if element not found in list
+    return -1;
+  }
+
+  /**
+   * Checks whether or not the list is empty.
+   * @returns {boolean} True if the list's empty, false if it's not.
+   */
+  isEmpty() {
+    return this.length === 0;
+  }
+
+  /**
+   * Gets the size of list.
+   * @returns {number} The size of list.
+   */
+  size() {
+    return this.length;
+  }
+
+  /**
+   * Get a string representation of the list.
+   * @returns {string} The string representation of list.
+   */
+  toString() {
+    let
+      current = this.head,
+      string = '';
+
+    while(current) {
+      string += current.element + ', ';
+      current = current.next;
+    }
+
+    // Remove trailing space and comma
+    string = string.substring(0, string.length - 2);
+
+    return string;
+  }
+
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Sat Dec 17 2016 17:18:41 GMT-0500 (EST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
