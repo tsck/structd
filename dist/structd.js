@@ -79,17 +79,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.HashTable = _HashTable.HashTable;
 	exports.BinarySearchTree = _BinarySearchTree.BinarySearchTree;
 	exports.Graph = _Graph.Graph;
-	
-	// var structd = {
-	//   Stack             : Stack,
-	//   Queue             : Queue,
-	//   LinkedList        : LinkedList,
-	//   HashTable         : HashTable,
-	//   BinarySearchTree  : BinarySearchTree,
-	//   Graph             : Graph
-	// };
-	//
-	// export default { structd };
 
 /***/ },
 /* 1 */
