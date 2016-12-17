@@ -6,14 +6,3 @@ import { BinarySearchTree } from './structures/binary-search-tree/BinarySearchTr
 import { Graph } from './structures/graph/Graph';
 
 export { Stack, Queue, LinkedList, HashTable, BinarySearchTree, Graph };
-
-// var structd = {
-//   Stack             : Stack,
-//   Queue             : Queue,
-//   LinkedList        : LinkedList,
-//   HashTable         : HashTable,
-//   BinarySearchTree  : BinarySearchTree,
-//   Graph             : Graph
-// };
-//
-// export default { structd };
