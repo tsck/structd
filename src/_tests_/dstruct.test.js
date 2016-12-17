@@ -36,4 +36,11 @@ describe('The dStruct object', function() {
         expect(bst instanceof dstruct.BinarySearchTree).to.be.true;
     });
   });
+
+  describe('Public Graph class', function() {
+    it('Should create a new Graph', function() {
+        let graph = new dstruct.Graph();
+        expect(graph instanceof dstruct.Graph).to.be.true;
+    });
+  });
 });
