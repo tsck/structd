@@ -6,24 +6,10 @@
 [![license](https://img.shields.io/github/license/tsck/structd.svg)](https://github.com/tsck/structd/blob/master/LICENSE)
 
 
-Structd is a JavaScript data structure extension library that provides additional data structure class support. It can be used in Node.js as well as in the browser.
+Structd is a JavaScript data structure extension library that provides additional data structure class support. It is designed to be used in bothin [Node.js](https://nodejs.org/en/) and is installable via `npm install struct`, it can also be used directly in the browser.
 
-## Installation
+For Documentation, visit http://tsck.github.io/structd/
 
-```bash
-$ npm install structd
-```
-
-## Features
-
-Class support for the following data structures
-* Stacks
-* Queues
-* Hash Tables
-* Linked Lists
-* Binary Search Tress
-* Graphs
-    
 ## License
 
 [MIT](LICENSE)
